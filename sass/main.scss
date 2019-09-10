@@ -1,0 +1,56 @@
+@import './Helpers/variables';
+@import './Helpers/mixin';
+
+@import './Base/reset';
+
+@import './Components/button';
+
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/intro';
+@import './Layouts/courses';
+@import './Layouts/student';
+@import './Layouts/recommendations';
+@import './Layouts/categories';
+@import './Layouts/comments';
+@import './Layouts/job';
+@import './Layouts/footer';
+@import './Base/customize';
+@import './Base/normalized';
+
+
+
+// --Base
+    //reset.scss
+    //customize.scss
+//------
+
+//--Helpers
+    //variable.scss
+    //Mixin
+    //enxtend.scss
+//------
+
+//--Component
+    //button
+    //input
+    //link
+//------
+
+// --Layouts
+    //header
+    //footer
+    //carousel
+// -----
+
+// --Page : Dung cho Web nhieu pages
+    //Home
+    //Contact
+
+// ------
+
+// --Themem
+
+// --Vendor (assets)
+    //Library
+// ------

@@ -1,0 +1,27 @@
+@mixin text($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin button($color, $bg-color, $fw, $pd-top-bottom, $pd-left-right, $color-border, $color-hover, $bg-color-hover) {
+    color: $color;
+    background-color: $bg-color;
+    font-weight: $fw;
+    padding: $pd-top-bottom $pd-left-right !important;
+    border: 1px solid $color-border;
+    &:hover{
+        color: $color-hover;
+        background-color: $bg-color-hover;
+    }   
+}
+@mixin respond-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint){
+        $value: map-get($map: $breakpoints, $key: $breakpoint);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else{
+        @warn "breakpoint khong ton tai trong breakpoints";
+    }  
+}

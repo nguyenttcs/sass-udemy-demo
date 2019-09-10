@@ -1,0 +1,14 @@
+.recommendations{
+    background-color: $color-black-0;
+    color: $color-white-0;
+    .row{
+        padding: $pd-3;
+    }
+    
+}
+
+// div.border-gradient
+.border-gradient{
+    background: linear-gradient(to right, $color-red-1, $color-red-0);
+    height: 8px;
+}

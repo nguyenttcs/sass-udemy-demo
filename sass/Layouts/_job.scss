@@ -1,0 +1,29 @@
+.job{
+    background: #F7F8FA;
+    h6{
+        color: $color-gray-2;
+        font-size: $fs-1;
+    }
+    .job__item{
+        text-align: center;
+        padding: $pd-2 100px;
+        a{
+            text-decoration: none;
+            color: $color-black-light;
+        }
+        p{
+            line-height: 2;
+        }
+        &:first-child{
+            border-right: 1px solid $color-gray-3;
+        }
+    }
+    @include respond-to("medium"){
+        .job__item{
+            padding: $pd-2 $pd-3;
+            &:first-child{
+                border-right: 0px solid $color-gray-3;
+            }
+        }
+    }
+}

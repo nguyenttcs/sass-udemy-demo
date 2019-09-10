@@ -1,0 +1,23 @@
+.comments{
+    background: #F7F8FA;
+    .commments__item{
+        padding: $pd-2;
+        background-color: $color-white-0;
+        & > div{
+            margin-bottom: $mg-1 + 5;
+            img{
+                width: 64px;
+                border-radius: 50%;
+                margin-right: $mg-1;
+            }
+            span{
+                align-self: center;
+                font-weight: $fw-bold;
+            }
+        }
+        p{
+            line-height: 2;
+            text-align: justify;
+        }
+    }
+}
